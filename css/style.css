@@ -1,0 +1,626 @@
+body{
+    font-family: 'Inter', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+a{
+    text-decoration: none;
+}
+ul {
+    margin: 0;
+    padding: 0;
+   }
+li {
+    list-style-type: none;
+   }
+   button{
+       cursor: pointer;
+   }
+   :active,:hover,:focus{
+       outline:0;
+       outline-offset:0
+    }
+    button{
+        border: none;
+        background: none;
+    }
+
+    /*Header==========================*/
+.header{
+    padding: 22px 150px;
+    position: relative;
+}
+.header__wraper{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+    
+}
+.nav__list{
+    display: flex;
+    flex-wrap: wrap;
+}
+.nav__item{
+    margin-left: 22px;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 20px;
+}
+.nav__link{
+    color: #18191F;
+    padding:30px 5px;
+    transition: .3s
+}
+.nav__link:hover, .nav__link:focus{
+    background-color: rgba(0, 0, 0, 0.25);
+    transition: .3s
+}
+.header__burger{
+    display: none;
+}
+
+/*Home================================*/
+.home{
+    
+    padding-left: 165px;
+    padding-top: 291px;
+    padding-bottom: 219px;
+    background: url(../img/home_bg.png)right no-repeat,
+    linear-gradient(194.01deg, #D9E8EF 9.6%, #EAF2F5 89.64%);
+   
+}
+.home__wraper{
+    max-width: 540px;
+}
+h1, .home__title{
+    margin: 0;
+    font-weight: 800;
+    font-size: 72px;
+    line-height: 98px;
+    color: #18191F;
+    margin-bottom: 16px;
+    text-align: left;
+    display: flex;
+    
+
+}
+p, .home__text{
+    margin: 0;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 32px;
+    color: #18191F;
+    margin-bottom: 32px;
+    text-align: left;
+    display: flex;
+}
+.home__button{
+    border: none;
+    background: #8C30F5;
+    border-radius: 6px;
+    padding: 12px 32px;
+    color: #fff;
+    transition: .3s;
+}
+.home__button:hover, .home__button:focus{
+    background: #6f1ecc;
+    transition: .3s;
+}
+
+/*Logo Cloud==========================*/
+
+.logo_cloud{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    margin: 16px auto;
+    padding: 15px 150px;
+    position: relative;
+    border-bottom: 1px solid;
+    border-top: 1px solid;
+    border-image: linear-gradient(to right, #ffffff, #6c9fbd94, #ffffff ) 47% 0%;
+   
+}
+.logo_cloud__item{
+    margin: 10px 32px;
+}
+
+/*About==============================*/
+
+.about{
+    padding: 64px 100px;
+}
+.about__intro{
+    margin: 0 auto;
+    max-width: 540px;
+}
+h2, .about__title{
+    font-weight: 800;
+    font-size: 48px;
+    line-height: 64px;
+    color: #18191F;
+    text-align: center;
+}
+p, .about__text{
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 32px;
+    color: #18191F;
+    text-align: center;
+}
+.about__cards{
+    margin-top: 33px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.about__card{
+    margin:  15px;
+    margin-bottom: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 350px;
+}
+h5, .card__title{
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 32px;
+    color: #18191F;
+    margin-top: 24px;
+}
+h6, .card__text{
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 26px;
+    color: #18191F;
+    text-align: center;
+    margin: 0;
+}
+
+/*Services===========================*/
+
+.services{
+    background: #D9E8EF;
+    padding: 80px 100px;
+}
+.services__cards{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.services__card{
+    margin:  15px;
+    padding: 40px 32px;
+    display: flex;
+    flex-direction: column;
+    max-width: 286px;
+    background: #fff;
+    border-radius: 8px;
+}
+.services__card__title{
+    margin: 0;
+    text-align: left;
+    margin-top: 56px;
+}
+.services__card__text{
+    text-align: left;
+    margin-top: 12px;
+    margin-bottom: 40px;
+}
+.services__card__button{
+    padding: 3px 10px ;
+    margin: -3px -10px;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    width: 130px;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 16px;
+    color: #8C30F5;
+    transition: .3s;
+}
+.services__ico{
+    
+    font-size: 30px;
+    color: #8C30F5;
+    margin-left: 10px;
+}
+.services__card__button:hover, .services__card__button:focus{
+    background: #D9E8EF;
+    border-radius: 8px;
+    transition: .3s;
+}
+.services__button{
+    display: flex;
+    align-items: center;
+    position: relative;
+    left: 50%;
+    transform: translate(-50%, 0);
+    padding: 0;
+    margin: 0;
+    padding: 12px 20px;
+    margin-top: 33px;
+    color: #8C30F5;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 24px;
+    border: 2px solid #8C30F5;
+    border-radius: 6px;
+}
+.services__button:hover, .services__button:focus{
+    background: #8C30F5;
+    color: #fff;
+}
+.services__button_ico{
+    margin-left: 16px;
+}
+.services__button_ico:hover, .services__button_ico:focus{
+    color: #fff;
+}
+
+/*Blog===============================*/
+
+.blog{
+    padding: 64px 100px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+.blog__content{
+    margin-left: 50px;
+    display: flex;
+    flex-direction: column;
+    max-width: 540px;
+    flex-wrap: wrap;
+}
+h3, .blog__title{
+    font-weight: 800;
+    font-size: 40px;
+    line-height: 54px;
+    color: #18191F;
+    text-align: left;
+}
+.blog__text{
+    text-align: left;
+}
+
+/*Jobs===============================*/
+
+.jobs{
+    background: #D9E8EF;
+    padding: 80px 55px;
+}
+.jobs__title{
+    margin: 0;
+    margin-bottom: 8px;
+}
+.jobs__cards{
+    margin: 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.jobs__card{
+    margin: 40px 55px;
+    display: flex;
+    flex-direction: column;
+}
+.jobs__card__title{
+    margin: 0;
+    margin-bottom: 24px;
+    font-weight: normal;
+    font-size: 28px;
+    line-height: 40px;
+}
+.jobs__more{
+    margin-top: 24px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.jobs__more__text{
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 18px;
+    text-transform: uppercase;
+}
+.jobs__more__button{
+    padding: 10px 20px;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 20px;
+    color: #fff;
+    background: #8C30F5;
+    border-radius: 6px;
+    transition: .3s;
+}
+.jobs__more__button:hover, .jobs__more__button:focus{
+    background: #6f1ecc;
+    transition: .3s;
+}
+.jobs__card__img{
+    border: 2px solid rgba(0, 0, 0, 0.9);
+    border-radius: 10px;
+}
+
+/*Stats==============================*/
+
+.stats{
+    padding: 80px 100px;
+    display: flex;
+    justify-content:space-between;
+    
+}
+.stats__content{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    max-width: 540px;
+   
+}
+.stats__title{
+    margin: 0;
+    text-align: left;
+    margin-bottom: 8px;
+}
+.stats__text{
+    margin: 0;
+    text-align: left;
+}
+.stats__cards{
+    
+    align-items: center;
+    display: flex;
+    flex-wrap: wrap;
+    width: 50%;
+}
+.stat__card{
+    display: flex;
+    align-items: center;
+    margin: 20px 15px;
+    width: 255px;
+    text-align: left;
+}
+.stats__card__variables{
+    margin: 0;
+    margin-left: 24px;
+}
+.variables__value{
+    margin: 0;
+
+}
+.variables__name{
+    margin: 0;
+
+}
+
+/*Footer=============================*/
+
+.footer{
+    margin: 0;
+    padding: 24px 0;
+    background: #0B0D17;
+    display: flex;
+    justify-content: space-around;
+}
+.footer__nav__item{
+    margin: 0 16px;
+}
+.footer__nav__link{
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 24px;
+    color: #D9DBE1;
+    padding:32px 5px;
+    transition: .3s
+}
+.footer__nav__link:hover, .footer__nav__link:focus{
+    background-color: rgba(255, 255, 255, 0.25);
+    transition: .3s
+}
+.footer__text{
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 24px;
+    color: #D9DBE1;
+}
+.footer__burger{
+    display: none;
+    color: #D9DBE1;
+}
+.footer__logo_mini{
+    display: none;
+}
+
+/*Adaptive===========================*/
+
+@media screen and (max-width:1439px){
+    .home{
+        padding-left: 100px;
+    }
+    .logo_cloud{
+        padding: 15px 0px;
+    }
+    .blog{
+        padding: 64px 50px;
+    }
+    .blog__img{
+       max-width: 350px;
+    }
+    .blog__content{
+        margin-left: 30px;
+    }
+    .jobs{
+        padding: 80px 50px;
+    }
+    .jobs__card{
+        margin: 30px;
+        max-width: 400px;
+    }
+    .jobs__card__title{
+        font-size: 20px;
+    }
+    .stats__content{
+        margin: auto 0;
+    }
+}
+@media screen and (max-width:1023px){
+    .header{
+        padding: 22px 100px;
+    }
+    .home{
+        padding-left: 50px;
+    }
+    .home__wraper{
+        max-width: 300px;
+    }
+    h1, .home__title{
+        font-size: 50px;
+        line-height: 72px;
+    }
+    p, .home__text{
+        font-size: 14px;
+        line-height: 27px;
+    }
+    .about{
+        padding: 30px 50px;
+    }
+    h2, .about__title{
+        font-size: 28px;
+        line-height: 44px;
+    }
+    p, .about__text{
+        font-size: 14px;
+        line-height: 27px;
+    }
+    .about__card{
+        max-width: 300px;
+    }
+    .card_ico{
+        width: 25px;
+        height: 25px;
+    }
+    h5, .card__title{
+        font-size: 18px;
+        line-height: 26px;
+    }
+    h6, .card__text{
+        font-size: 12px;
+        line-height: 22px;
+    }
+    .services{
+        padding: 40px 50px;
+    }
+    .services__card{
+        max-width: 236px;
+    }
+    .services__button{
+        padding: 6px 10px;
+    }
+    .blog{
+        padding: 40px 50px;
+    }
+    .blog__img{
+        max-width: 300px;
+    }
+    .blog__content{
+        max-width: 300px;
+    }
+    .jobs__card__title{
+        font-size: 18px;
+        line-height: 20px;
+    }
+    .jobs__more__text{
+        font-size: 12px;
+        line-height: 22px;
+    }
+    .jobs__more__button{
+        padding: 6px 12px;
+    }
+    .jobs__card {
+        margin: 15px;
+        max-width: 300px;
+    }
+    .stats{
+        padding: 40px 50px;
+    }
+    .footer__nav__item{
+        margin: 0 10px;
+    }
+    .footer__nav__link{
+        font-size: 12px;
+        line-height: 20px;
+    }
+    .footer__text{
+        font-size: 12px;
+        line-height: 22px;
+    }
+}
+@media screen and (max-width:767px){
+    .header{
+        padding: 22px;
+    }
+    .home__wraper{
+        padding: 10px;
+        background: rgba(0, 0, 0, 0.3);
+        border-radius: 4px;
+    }
+    .home__title{
+        color: #fff;
+        font-size: 30px;
+        line-height: 42px;
+    }
+    .home__text{
+        color: #fff;
+    }
+    .header__nav{
+        display: none;
+    }
+    .header__burger{
+        display: block;
+    }
+    .services__card{
+        padding: 25px;
+    }
+    .services__card__title{
+        margin-top: 20px;
+    }
+    .services__card__text{
+        margin-bottom: 20px;
+    }
+    .blog__content {
+        margin-left: 0;
+    }
+    h3, .blog__title{
+        font-size: 20px;
+        line-height: 34px;
+    }
+    .jobs {
+        padding: 40px 50px;
+    }
+    .stats{
+        flex-wrap: wrap;
+    }
+    .footer__nav{
+        display: none;
+    }
+    .footer__burger{
+        display: block;
+    }
+}
+@media screen and (max-width:424px){
+    .home{
+        padding: 20px;
+    }
+    .footer__logo{
+        display: none;
+    }
+    .footer__logo_mini{
+        display: block;
+    }
+}
